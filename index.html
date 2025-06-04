@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio LEO NARDO</title>
+    <style>
+        :root {
+            --warna-primer: #0366d6; /* Warna biru yang lebih profesional */
+            --warna-sekunder: #24292e; /* Warna gelap untuk teks */
+            --warna-aksen: #28a745; /* Warna hijau untuk aksen */
+            --warna-latar: #f6f8fa; /* Warna latar yang lembut */
+            --warna-putih: #ffffff;
+            --bayangan: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --radius: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: var(--warna-latar);
+            color: var(--warna-sekunder);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: var(--warna-putih);
+            padding: 1.5rem 0;
+            box-shadow: var(--bayangan);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--warna-primer);
+            text-decoration: none;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .navigation a {
+            color: var(--warna-sekunder);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: var(--warna-primer);
+        }
+
+        .navigation a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--warna-primer);
+            transition: width 0.3s ease;
+        }
+
+        .navigation a:hover::after {
+            width: 100%;
+        }
+
+        .main-content {
+            flex: 1;
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (min-width: 768px) {
+            .hero {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        .hero-info {
+            flex: 1;
+        }
+
+        .hero-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--warna-primer);
+        }
+
+        .hero-info p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .highlight {
+            color: var(--warna-primer);
+            font-weight: 600;
+        }
+
+        .profile-image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--warna-putih);
+            box-shadow: var(--bayangan);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin: 2rem 0 1.5rem;
+            color: var(--warna-primer);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            
+        }
+
+      
+
+        .footer {
+            background-color: var(--warna-sekunder);
+            color: var(--warna-putih);
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        .footer-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link {
+            color: var(--warna-putih);
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            color: var(--warna-aksen);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <a href="#" class="logo">Portofolio</a>
+            <nav class="navigation">
+                <a href="#">Beranda</a>
+                <a href="#proyek">Proyek</a>
+                <a href="#">Tentang</a>
+                <a href="#">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-info">
+                <h1>Halo, Saya <span class="highlight">Leo Nardo</span></h1>
+                <p><strong>Mahasiswa Ilmu Komputer - Universitas Lampung</strong></p>
+                <p>Website ini saya buat untuk memenuhi tugas mata kuliah Grafika Komputer. Saya memiliki minat dalam pengembangan web dan desain antarmuka pengguna.</p>
+                <p>Portofolio ini menampilkan beberapa proyek yang telah saya kerjakan selama perkuliahan.</p>
+            </div>
+            <div class="profile-image-container">
+               <img src="leo.jpg" alt="Foto Profil Leo Nardo" class="profile-image">
+            </div>
+        </section>
+
+        <section id="proyek">
+           <a class="section-title" href=" tugas.html">Tugas saya</a>
+            
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p><strong>Kontak Saya</strong></p>
+                <p>Email: leo.nardo@student.unila.ac.id</p>
+                <p>Telepon: +62 812-3456-7890</p>
+            </div>
+            <div class="social-links">
+                <a href="mailto:leo.nardo@student.unila.ac.id" class="social-link">📧</a>
+                <a href="https://github.com/username" target="_blank" class="social-link">💻</a>
+                <a href="https://linkedin.com/in/username" target="_blank" class="social-link">🔗</a>
+                <a href="https://instagram.com/username" target="_blank" class="social-link">📸</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 Portofolio Leo Nardo. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

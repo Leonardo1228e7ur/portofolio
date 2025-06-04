@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSARIF - Daftar Tugas</title>
+    <style>
+        /* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Warna latar belakang abu-abu muda */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #4CAF50; /* Warna hijau gelap untuk navbar */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+    background-color: rgba(255, 255, 255, 0.2); /* Sedikit transparan saat hover/active */
+}
+
+/* Container for Main Content */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Main Heading */
+h1 {
+    color: #333;
+    text-align: left;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eee; /* Garis bawah untuk judul utama */
+    padding-bottom: 10px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.card-title {
+    color: #007bff; /* Warna biru untuk judul tugas */
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.card-content ul {
+    list-style: none; /* Hilangkan bullet point default */
+    padding: 0;
+    margin: 0;
+}
+
+.card-content li {
+    margin-bottom: 8px;
+}
+
+.card-content .link-materi {
+    color: #007bff; /* Warna biru untuk link materi */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card-content .link-materi:hover {
+    color: #0056b3; /* Warna biru lebih gelap saat hover */
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar .nav-links {
+        margin-top: 10px;
+    }
+    .navbar .nav-links a {
+        margin: 0 10px 0 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">tugas leo nardo</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tugas.html" class="active">Tugas</a>
+          
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Daftar Tugas</h1>
+
+        <div class="card">
+            <h2 class="card-title">Tugas 1 - Tokoh Perintis Grafika Komputer</h2>
+            <div class="card-content">
+                <ul>
+                    <li><a href="https://docs.google.com/document/d/1C7LXTyCTBDxOlcFWSoq1r7NGepMK0JEe/edit?usp=drive_link&ouid=100827408031172594257&rtpof=true&sd=true" class="link-materi">jawaban tugas </a></li>
+                    <li><a href="https://docs.google.com/presentation/d/1klK768JEmz_t5mFkyQk0tLuJ7q3bE3Q3/edit?usp=drive_link&ouid=100827408031172594257&rtpof=true&sd=true" class="link-materi">PowerPoint</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">Tugas 2 - Algoritma Garis DDA & Bresenham</h2>
+            <div class="card-content">
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1_CCc-iID8hFuK2YRHRUNYPr8hAHYLn9u/view?usp=sharing" class="link-materi">Jawaban tugas</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">Tugas 3 - Algoritma Lingkaran Midpoint & Bresenham</h2>
+            <div class="card-content">
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/18OR86cWDYMEkr0zZVRummk7PgpqGjR3H/view?usp=sharing" class="link-materi">Jawaban tugas</a></li>
+            
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Tugas 4 - Algoritma Kurva Bezier</h2>
+            <div class="card-content">
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1lGr6-E8-5SD9L5a7cOXrcmzClZQvWBL0/view?usp=sharing" class="link-materi">Jawaban tugas</a></li>
+                
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Kuis 1 - Persamaan Misteri</h2>
+            <div class="card-content">
+                <ul>
+                  
+                    <li><a href="https://youtu.be/qtjeAm3PRro" class="link-materi">Tonton Video</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Kuis 2 - Transformasi 2D</h2>
+            <div class="card-content">
+                <ul>
+                    <li><a href="https://youtu.be/Y9k5MRmoqVM" class="link-materi">vidio kuis 2</a></li>
+                    <li><a href="https://youtu.be/kOKumH8WWQ8" class="link-materi">Tonton Video pembelajaran</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Kuis 3 - Clipping Algorithm</h2>
+
+            <div class="card-content">
+                <ul>
+                    
+                    <li><a href="https://youtu.be/i9Hq2botRe0" class="link-materi">Tonton Video</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Kuis 4 - Polygon Clipping Algorithm</h2>
+            <div class="card-content">
+                <ul>
+                   
+                    <li><a href="https://youtu.be/9SvaBwpyvN0" class="link-materi">Tonton Video</a></li>
+                </ul>
+            </div>
+        </div>
+
+        </main>
+
+    </body>
+</html>
